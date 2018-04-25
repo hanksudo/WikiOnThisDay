@@ -7,13 +7,13 @@
         var host = 'http://' + lang + '.wikipedia.org/';
         var url = host + 'w/api.php?action=featuredfeed&feed=onthisday&feedformat=rss';
         $.ajax({
-            url: '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=' + encodeURIComponent(url),
+            url: '//api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(url),
             dataType: 'jsonp',
             success: function(data) {
-                var entries = data.responseData.feed.entries;
+                var items = data.items;
                 var feeds = '';
-                for (var i = entries.length - 1; i > 0; i--) {
-                    feeds = feeds + entries[i].content + '<hr>';
+                for (var i = items.length - 1; i > 0; i--) {
+                    feeds = feeds + items[i].content + '<hr>';
                 }
 
                 // fix wikipedia links

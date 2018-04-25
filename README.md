@@ -4,15 +4,9 @@ Fetch zh, en Wikipedia on this day
 
 ## Demo
 
-http://hanksudo.github.io/WikiOnThisDay/
-
-## TODO
-
-- Implement by VanillaJS
-- Implement by AngularJS
-- Implement by Python
+[https://hanksudo.github.io/WikiOnThisDay/](https://hanksudo.github.io/WikiOnThisDay/)
 
 ## API Powerd by
 
 - [Wikipedia API](http://en.wikipedia.org/w/api.php)
-- [Google Feed API](https://developers.google.com/feed/v1/jsondevguide)
+- [RSS to JSON Converter online - rss2json.com](https://rss2json.com/)
